@@ -1,15 +1,13 @@
 package com.devglan.model;
 
-public class ApiResponse<T> {
+public class ApiResponse 
+{
 
     private int status;
     private String message;
-    private Object result;
+    private String token;
 
-    public ApiResponse(int status, String message, Object result) {
-        this.status = status;
-        this.message = message;
-        this.result = result;
+    public ApiResponse() {
     }
 
     public int getStatus() {
@@ -28,11 +26,11 @@ public class ApiResponse<T> {
         this.message = message;
     }
 
-    public Object getResult() {
-        return result;
+    public String getToken() {
+        return token;
     }
 
-    public void setResult(Object result) {
-        this.result = result;
+    public void setToken(String token) {
+        this.token = token;
     }
 }
